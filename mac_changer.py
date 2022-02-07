@@ -44,9 +44,3 @@ if current_mac == options.new_mac:
     print(f"MAC address was successfully changed to = {current_mac}")
 else:
     print("MAC address was not changed.")
-
-# Flow control: start on line 36, get the arguments provided by the user(--help)
-# then they will be parsed(line 11) Curent mac is printed before any changes (line 37)
-# current mac is found by using regex based on interface provided
-# the change_mac function is executed(line 39).
-# MAC address is verifed on line 40 by rerunning the current_mac variable 
