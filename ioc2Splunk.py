@@ -1,6 +1,6 @@
 #Sort an IOC list for Splunk searches
-import optparse
 
+import optparse
 
 def get_file():
     parser=optparse.OptionParser()
@@ -9,7 +9,6 @@ def get_file():
     if not options.filename:
         parser.error('Please enter the full path of the file to parse, use --help for options')
     return options
-
 
 def prep_file(z):
     with open(z, 'r') as f:
@@ -28,5 +27,5 @@ def sort_file(s):
             v.writelines(sorted_ioc)
     return sorted_ioc
         
-final=sort_file(file_ready)
+sort_file(file_ready)
 print('Success, File saved as: sorted_ioc.txt')                 
