@@ -1,4 +1,7 @@
+#IOC Parser by Jose Oregon
 #Sort an IOC list for Splunk searches
+#needs function to defang URL/IPs
+#one IOC per line on text file
 
 import optparse
 
